@@ -75,7 +75,7 @@ function Login() {
 
                     <div className={styles.footer}>
                         <p>
-                            Have an account? <a href="#signup">Sign Up</a>
+                            Don’t have an account? <a href="#signup">Sign Up</a>
                         </p>
                     </div>
                 </div>
