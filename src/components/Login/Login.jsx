@@ -8,7 +8,8 @@ function Login() {
             <section className={styles.leftSection}>
                 <div className={styles.formWrapper}>
                     <div className={styles.header}>
-                        <h1>Get Started Now</h1>
+                        <h1>Welcome back!</h1>
+                        <p className={styles.subtitle}>Enter your Credentials to access your account</p>
                     </div>
 
                     <form className={styles.form} onSubmit={(e) => e.preventDefault()}>

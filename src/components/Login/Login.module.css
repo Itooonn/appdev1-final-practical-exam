@@ -39,6 +39,13 @@
   font-family: var(--font-primary);
 }
 
+.subtitle {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
 .form {
   display: flex;
   flex-direction: column;
