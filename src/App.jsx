@@ -6,8 +6,7 @@ function App() {
   return (
   <>
     {/* <h1>APPDEV1 Final Project</h1> */}
-    <Login/>
-    {/* <Signup/> */}
+    <Signup/>
   </>
   )
 }

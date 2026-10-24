@@ -1,11 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
+  /* ==========================================================================
+     Colors
+     ========================================================================== */
   --primary-color: #3A5B22;
   --primary: #3A5B22;
+
+  --color-text-title: #111111;
+  --color-text-body: #000000;
+  --color-text-muted: #718096;
+  --color-text-placeholder: #A0AEC0;
+  --color-text-white: #ffffff;
+  --color-link: #2563EB;
+
+  --color-bg-white: #ffffff;
+  --color-bg-hover: #F8FAFC;
+
+  --color-border-input: #DCDFE4;
+  --color-border-divider: #E2E8F0;
+  --color-border-hover: #CBD5E1;
+
+  /* ==========================================================================
+     Typography
+     ========================================================================== */
   --font-family: 'Poppins', sans-serif;
   --font-primary: 'Poppins', sans-serif;
-  --font-weight-default: normal;
+
+  --font-weight-normal: normal;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-default: var(--font-weight-normal);
+
+  --font-size-title: 2rem;
+  --font-size-subtitle: 1rem;
+  --font-size-btn: 0.95rem;
+  --font-size-body: 0.85rem;
+  --font-size-placeholder: 0.8rem;
+  --font-size-small: 0.75rem;
+
+  --letter-spacing-title: -0.5px;
+
+  /* ==========================================================================
+     Spacing
+     ========================================================================== */
+  --spacing-section-padding: 2rem 2.5rem;
+  --spacing-header-mb: 2rem;
+  --spacing-form-gap: 1.15rem;
+  --spacing-input-gap: 0.4rem;
+  --spacing-input-padding: 0.75rem 1rem;
+  --spacing-btn-padding: 0.85rem;
+  --spacing-social-padding: 0.65rem 0.5rem;
+  --spacing-social-gap: 0.75rem;
+  --spacing-divider-my: 1rem 0;
+  --spacing-footer-mt: 1.5rem;
+  --spacing-checkbox-gap: 0.5rem;
+
+  /* ==========================================================================
+     Layout & Dimensions
+     ========================================================================== */
+  --form-max-width: 440px;
+  --left-section-width: 48%;
+  --right-section-width: 52%;
+  --checkbox-size: 14px;
+
+  /* ==========================================================================
+     Borders & Radius
+     ========================================================================== */
+  --border-radius-base: 8px;
+  --border-radius-checkbox: 3px;
+  --border-width: 1px;
+
+  /* ==========================================================================
+     Transitions
+     ========================================================================== */
+  --transition-fast: 0.2s;
+  --btn-hover-opacity: 0.92;
 }
 
 * {
@@ -14,10 +84,10 @@
 
 body {
   font-family: var(--font-family);
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
 }
 
 input, button, select, textarea {
   font-family: inherit;
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
 }
