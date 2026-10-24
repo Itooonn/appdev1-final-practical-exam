@@ -58,6 +58,23 @@
   gap: 0.4rem;
 }
 
+.labelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgotPassword {
+  font-size: 0.75rem;
+  color: #2563EB;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
 .inputGroup label {
   font-size: 0.85rem;
   font-weight: normal;

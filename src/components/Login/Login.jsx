@@ -14,17 +14,6 @@ function Login() {
 
                     <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
                         <div className={styles.inputGroup}>
-                            <label htmlFor="name">Name</label>
-                            <input 
-                                type="text" 
-                                id="name" 
-                                name="name" 
-                                placeholder="Enter your name" 
-                                required 
-                            />
-                        </div>
-
-                        <div className={styles.inputGroup}>
                             <label htmlFor="email">Email address</label>
                             <input 
                                 type="email" 
@@ -36,7 +25,10 @@ function Login() {
                         </div>
 
                         <div className={styles.inputGroup}>
-                            <label htmlFor="password">Password</label>
+                            <div className={styles.labelRow}>
+                                <label htmlFor="password">Password</label>
+                                <a href="#forgot" className={styles.forgotPassword}>Forgot password?</a>
+                            </div>
                             <input 
                                 type="password" 
                                 id="password" 
@@ -47,14 +39,14 @@ function Login() {
                         </div>
 
                         <div className={styles.checkboxGroup}>
-                            <input type="checkbox" id="terms" name="terms" required />
-                            <label htmlFor="terms">
-                                I agree to the <a href="#terms">terms &amp; policy</a>
+                            <input type="checkbox" id="remember" name="remember" />
+                            <label htmlFor="remember">
+                                Remember for 30 days
                             </label>
                         </div>
 
                         <button type="submit" className={styles.submitButton}>
-                            Signup
+                            Login
                         </button>
 
                         <div className={styles.divider}>
@@ -83,7 +75,7 @@ function Login() {
 
                     <div className={styles.footer}>
                         <p>
-                            Have an account? <a href="#signin">Sign In</a>
+                            Have an account? <a href="#signup">Sign Up</a>
                         </p>
                     </div>
                 </div>
