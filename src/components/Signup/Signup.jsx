@@ -1,7 +1,7 @@
 import styles from './Signup.module.css';   
 import blossomFlower from '../../assets/blossom-flower.svg';   
 
-function Signup() {
+function Signup({ onNavigateToLogin }) {
     return (
         <div className={styles.signupContainer}>
             {/* Left section */}
@@ -82,7 +82,7 @@ function Signup() {
 
                     <div className={styles.footer}>
                         <p>
-                            Have an account? <a href="#signin">Sign In</a>
+                            Have an account? <a href="#login" onClick={(e) => { e.preventDefault(); onNavigateToLogin ? onNavigateToLogin() : (window.location.hash = 'login'); }}>Sign In</a>
                         </p>
                     </div>
                 </div>
