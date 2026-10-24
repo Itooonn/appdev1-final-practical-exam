@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --primary-color: #3A5B22;
+  --primary: #3A5B22;
+  --font-family: 'Poppins', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-weight-default: normal;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: normal;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-weight: normal;
+}
